@@ -24,7 +24,10 @@ def count_letters(text):
     digit = input("Какую цифру ищем? ")
     letter = input("Какую букву ищём? ")
 
-    print(f"\nКоличество цифр {digit}: {text.count(digit)}")
-    print(f"Количество букв {letter}: {text.count(letter)}")
+    digit_sum = text.count(digit)
+    letter_sum = text.count(letter)
+
+    print(f"\nКоличество цифр {digit}: {digit_sum}")
+    print(f"Количество букв {letter}: {letter_sum}")
 
 count_letters(input("Введите текст: "))

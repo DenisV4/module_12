@@ -12,13 +12,16 @@ print('Задача 3. Апгрейд калькулятора\n')
 # Запрошенные числа должны передаваться в функции суммы, максимума и минимума при помощи аргументов.
 
 def print_digit_sum(num):
-    print(f"Сумма цифр числа {num} = {sum(int(i) for i in str(num))}")
+    result = sum(int(i) for i in str(num))
+    print(f"Сумма цифр числа {num} = {result}")
 
 def print_max_digit(num):
-    print(f"Максимальная цифра числа {num} = {max(int(i) for i in str(num))}")
+    result = max(int(i) for i in str(num))
+    print(f"Максимальная цифра числа {num} = {result}")
 
 def print_min_digit(num):
-    print(f"Минимальная цифра числа {num} = {min(int(i) for i in str(num))}")
+    result = min(int(i) for i in str(num))
+    print(f"Минимальная цифра числа {num} = {result}")
 
 while True:
     user_input = int(input("Введите число: "))

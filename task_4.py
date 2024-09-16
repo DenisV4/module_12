@@ -25,7 +25,8 @@ print('Задача 4. Число наоборот\n')
 # Кстати, нули, которые мы убрали, называются ведущими.
 
 def print_reverse(num):
-    print(f"Число наоборот: {(str(num)[::-1]).lstrip("0")}")
+    reversed_num = (str(num)[::-1]).lstrip("0")
+    print(f"Число наоборот: {reversed_num}")
 
 while True:
     user_input = int(input("Введите число: "))
